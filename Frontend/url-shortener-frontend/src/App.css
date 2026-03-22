@@ -1,0 +1,126 @@
+/* 🌌 Background */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+  color: white;
+}
+
+/* 🧭 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background: #ff4f91;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 📦 Layout */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🧊 Glass Card */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🧱 Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+/* ✏️ Inputs */
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  width: 70%;
+  margin-right: 10px;
+}
+
+/* 🔘 Buttons */
+button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #ff7eb3, #ff4f91);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* 🔗 Links */
+a {
+  color: #4cc9f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 📸 QR */
+.qr {
+  margin-top: 10px;
+}
+
+
+/* 🔐 Auth Page Centering */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🧊 Login Card */
+.auth-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Inputs full width */
+.auth-card input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Button full width */
+.auth-card button {
+  width: 100%;
+  margin-top: 10px;
+}
